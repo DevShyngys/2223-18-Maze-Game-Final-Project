@@ -6,5 +6,6 @@ public class RandomMovementStrategy implements MovementStrategy {
     @Override
     public void move() {
         System.out.println("Перемещаюсь случайным образом.");
+
     }
 }

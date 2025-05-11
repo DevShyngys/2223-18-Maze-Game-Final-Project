@@ -13,5 +13,6 @@ public class Character {
 
     public void move() {
         movementStrategy.move();
+
     }
 }
