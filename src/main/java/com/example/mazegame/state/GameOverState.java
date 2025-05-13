@@ -1,7 +1,7 @@
 package com.example.mazegame.state;
 
-import com.example.mazegame.state.GameState;
 import com.example.mazegame.MazeGame;
+import com.example.mazegame.state.GameState;
 
 public class GameOverState implements GameState {
     @Override
