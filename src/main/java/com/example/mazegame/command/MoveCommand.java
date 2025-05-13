@@ -1,5 +1,6 @@
 package com.example.mazegame.command;
 
+import com.example.mazegame.MazeGame;
 import com.example.mazegame.strategy.Character;
 
 public class MoveCommand implements Command {
@@ -11,6 +12,7 @@ public class MoveCommand implements Command {
 
     @Override
     public void execute() {
-        character.move();
+        character.move(new MazeGame(), 1, 0);
     }
 }
+
