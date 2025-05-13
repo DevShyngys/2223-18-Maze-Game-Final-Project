@@ -10,7 +10,6 @@ public class DeterministicMovementStrategy implements MovementStrategy {
                 return;
             }
 
-            // Двигаем игрока
             game.playerX += x;
             game.playerY += y;
         }
