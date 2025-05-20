@@ -1,5 +1,7 @@
 package com.example.mazegame.strategy;
 
+import com.example.mazegame.MazeGame;
+
 public class Character {
     private MovementStrategy movementStrategy;
 
@@ -11,8 +13,8 @@ public class Character {
         this.movementStrategy = movementStrategy;
     }
 
-    public void move() {
-        movementStrategy.move();
+    public void move(MazeGame game, int x, int y) {
+        movementStrategy.move(game, x, y);
 
     }
 }
