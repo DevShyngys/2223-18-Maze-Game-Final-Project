@@ -129,6 +129,9 @@ public class MazeGame {
         return row >= 0 && row < rows && col >= 0 && col < cols;
     }
 
+    /**
+     * Starts the game using the GameFacade.
+     */
     public void start() {
         GameFacade.startGame(this);
     }
@@ -194,11 +197,7 @@ public class MazeGame {
                 int size = 35;
                 for (int row = 0; row < rows; row++) {
                     for (int col = 0; col < cols; col++) {
-                        if (maze[row][col] instanceof Wall) {
-                            g.setColor(Color.BLACK);
-                        } else {
-                            g.setColor(Color.WHITE);
-                        }
+                        g.setColor(maze[row][col] instanceof Wall ? Color.BLACK : Color.WHITE);
                         g.fillRect(col * size, row * size, size, size);
                     }
                 }
@@ -272,7 +271,6 @@ public class MazeGame {
     public static void main(String[] args) {
         GameSettings settings = GameSettings.getInstance();
         MazeGame game = MazeGame.getInstance();
-        game.generateMaze();
-        game.createAndShowGUI();
+        game.start();
     }
 }
