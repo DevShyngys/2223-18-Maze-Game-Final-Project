@@ -80,6 +80,3 @@ mvn test
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-Feel free to customize this `README.md` further to match your project's specifics. If you need assistance with additional documentation, diagrams, or deployment instructions, feel free to ask!
