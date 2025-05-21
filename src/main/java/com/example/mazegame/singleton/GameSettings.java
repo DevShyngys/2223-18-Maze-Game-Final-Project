@@ -11,8 +11,4 @@ public class GameSettings {
         }
         return instance;
     }
-
-    public void printSettings() {
-        System.out.println("Настройки игры: сложность=нормальная, скорость=средняя");
-    }
 }

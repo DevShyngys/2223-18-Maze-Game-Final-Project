@@ -16,6 +16,5 @@ public class Character {
     public void move(MazeGame game, int x, int y) {
         movementStrategy.move(game, x, y);
 
-
     }
 }
