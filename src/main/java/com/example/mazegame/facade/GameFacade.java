@@ -5,19 +5,13 @@ import com.example.mazegame.MazeGame;
 import com.example.mazegame.strategy.MovementStrategy;
 
 public class GameFacade {
-    private MazeGame game;
-    private MovementStrategy moveStrategy;
+    private static MazeGame game;
 
     public GameFacade(MazeGame game) {
         this.game = game;
-        this.moveStrategy = new DeterministicMovementStrategy();
     }
 
-    public void startGame() {
+    public static void startGame(MazeGame game) {
         game.start();
-    }
-
-    public void movePlayer(int x, int y) {
-        moveStrategy.move(game, x, y);
     }
 }
